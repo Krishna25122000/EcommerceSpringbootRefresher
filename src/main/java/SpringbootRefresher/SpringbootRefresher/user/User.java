@@ -2,8 +2,6 @@ package SpringbootRefresher.SpringbootRefresher.user;
 
 import java.time.LocalDateTime;
 
-import javax.management.relation.Role;
-
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -20,12 +18,14 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+// This tells Springboot and Hibernate that this class is an entity and should be mapped to a table in the database
 @Entity
 @Table(name = "users")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+
 public class User {
 
     @Id

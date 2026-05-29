@@ -1,0 +1,5 @@
+----------entity - dto mapping -------------------
+List<Student>            // Before
+Stream<Student>          // stream()
+Stream<StudentDTO>       // map()
+List<StudentDTO>         // toList()

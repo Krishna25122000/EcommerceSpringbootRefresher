@@ -1,0 +1,10 @@
+Step 1 : Folder Structure 
+Create UserEntity,UserDTO,UserRepository,UserService,UserServiceImpl,UserController
+
+UserEntity = rows and columns required in database set primary key 
+UserDTO = info required at the frontend 
+UserRepository = extend JpaRepository it handles all the db operations 
+UserService = All method signature action that can be perform by the user 
+UserServiceImpl = Method definition here 
+    Entity <-> DTO transformation before sending to the client 
+UserController = Get,Post,Delete endpoints along how to receive/send request/response 

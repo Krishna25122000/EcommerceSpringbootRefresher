@@ -1,0 +1,20 @@
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+--------------------------------------
+@NotBlank(message = "Name is required") -> aisa kuch bhi hota hai kya 
+jakarta.validation.constraints
+
+------------------------------------------------
+Java generics to understand List<UserResponse>
+
+===========================================================================
+Without stream:
+
+for (Student s : students) {
+    // process each student
+}
+With stream:
+students.stream()
+================================================================================
+Lambda Expression

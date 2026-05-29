@@ -1,0 +1,38 @@
+### Create User (POST Request)
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "name": "Janjis",
+  "email": "paris@gmail.com",
+  "password": "898951",
+  "role": "USER"
+}
+###
+
+GET http://localhost:8080/api/v1/users
+
+###
+
+PUT http://localhost:8080/api/v1/users/5
+Content-Type: application/json
+
+{
+  "name": "K Jdehonson",
+  "email": "k@gmail.com"
+}
+
+###
+
+PATCH http://localhost:8080/api/v1/users/8
+Content-Type: application/json
+
+{
+  "name": "RimiJi"
+}
+
+###
+
+Delete http://localhost:8080/api/v1/users/8
+Content-Type: application/json
+
