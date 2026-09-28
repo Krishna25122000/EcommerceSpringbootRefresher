@@ -1,0 +1,52 @@
+### Create Product (POST Request)
+POST http://localhost:8080/api/v1/products
+Content-Type: application/json
+
+{
+  "name": "iPhone 15",
+  "description": "Apple flagship smartphone",
+  "price": 79999,
+  "stock": 10,
+  "category": "Electronics"
+}
+
+###
+
+### Fetch All Products
+GET http://localhost:8080/api/v1/products
+
+###
+
+### Fetch Single Product
+GET http://localhost:8080/api/v1/products/1
+
+###
+
+### Full Update Product (PUT)
+PUT http://localhost:8080/api/v1/products/1
+Content-Type: application/json
+
+{
+  "name": "iPhone 15 Pro",
+  "description": "Updated Apple flagship smartphone",
+  "price": 89999,
+  "stock": 8,
+  "category": "Electronics"
+}
+
+###
+
+### Partial Update Product (PATCH)
+PATCH http://localhost:8080/api/v1/products/1
+Content-Type: application/json
+
+{
+  "price": 74999,
+  "stock": 5
+}
+
+###
+
+### Delete Product
+DELETE http://localhost:8080/api/v1/products/1
+Content-Type: application/json
